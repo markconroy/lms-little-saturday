@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Last Man Standing</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      background-color: beige;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 768px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .input-container {
+      margin-bottom: 1rem;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    button,
+    input {
+      padding: .5rem;
+      font-size: 1rem;
+      border: 2px solid black;
+      
+    }
+
+    button {
+      background-color: greenyellow;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Little Saturday LMS Competition</h1>
+    <h2>Week 1, let's go...</h2>
+    <form action="">
+      <div class="input-container">
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="input-container">
+        <label for="team">Your team</label>
+        <input type="text" team="team" id="team">
+      </div>
+      
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+
+  <script>
+
+    const button = document.querySelector('button');
+    button.addEventListener('click', function() {
+      alert('You Fool!');
+    })
+  </script>
+</body>
+</html>
